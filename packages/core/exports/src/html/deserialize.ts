@@ -22,6 +22,22 @@ const MARKS_NODE_NAME_MATCHERS_MAP = {
   S: { type: 'strike' },
   CODE: { type: 'code' },
   EM: { type: 'italic' },
+  OL: { type: 'NumberedList' }, // Ordered List (ol)
+  UL: { type: 'BulletedList' }, // Unordered List (ul)
+  LI: { type: 'ListItem' }, // List Item (li)
+  P: { type: 'paragraph' },
+  BLOCKQUOTE: { type: 'quote' },
+  H1: { type: 'heading', level: 1 },
+  H2: { type: 'heading', level: 2 },
+  H3: { type: 'heading', level: 3 },
+  H4: { type: 'heading', level: 4 },
+  H5: { type: 'heading', level: 5 },
+  H6: { type: 'heading', level: 6 },
+  HR: { type: 'divider' },
+  BR: { type: 'break' },
+  A: { type: 'link' },
+  IMG: { type: 'image' },
+  
 };
 
 const VALID_TEXT_ALIGNS = ['left', 'center', 'right', undefined];
